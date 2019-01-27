@@ -1,25 +1,38 @@
 class Book
-  def initialize(title, author, page_count, genre, turn_page)
+  def initialize(title)
     @title = title
-    @author = author
-    @page_count = page_count
-    @genre = genre
-    @turn_page = turn_page
   end
 
-and then there were none = Title.new("And Then There Were None")
-end
+  def title
+    @title
+  end
 
-agatha christie = Author.new("Agatha Christie")
-end
+  def author=(author)
+    @author = author
+  end
 
-272 = Page_Count.new("272")
-end
+  def author
+    @author
+  end
 
-mystery = Genre.new("Mystery")
-end
+  def page_count=(num)
+    @page_count = num
+  end
 
-flipping the page... wow, you read fast = Turn_Page.new("Flipping the page... Wow, you read fast")
-end
+  def page_count
+    @page_count
+  end
 
-  
+  genre=(genre)
+    @genre = genre
+  end
+
+  def page_count
+    @page_count
+  end
+
+  def turn_page
+    puts "Flipping the page...wow, you read fast!"
+  end
+
+end
